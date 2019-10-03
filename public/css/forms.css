@@ -11,13 +11,13 @@ textarea {
 }
 
 .form-control input,
-textarea {
+.form-control textarea {
     border: 1px solid #a1a1a1;
     font: inherit;
     border-radius: 2px;
 }
 
 .form-control input,
-textarea:focus {
+.form-control textarea:focus {
     outline-color: #00695c;
 }
