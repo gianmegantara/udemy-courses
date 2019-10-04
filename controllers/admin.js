@@ -1,11 +1,13 @@
 exports.getAddProduct = (req, res, next) => {
     res.render('Admin/add-product', {
-        pageTitle: 'Add-Product'
+        pageTitle: 'Add-Product',
+        path: '/Admin/add-product'
     });
 };
 
 exports.getProduct = (req, res, next) => {
     res.render('Admin/product', {
-        pageTitle: 'Add-Product'
+        pageTitle: 'Add-Product',
+        path: '/Admin/product'
     });
 };
