@@ -1,13 +1,21 @@
+const Product = require('../model/product')
+
 exports.getIndex = (req, res, next) => {
-    res.render('Shop/index', {
-        pageTitle: 'Shop',
-        path: '/Shop/index'
+    Product.fetchAll(products => {
+        res.render('Shop/index', {
+            prods: products,
+            pageTitle: 'Shop',
+            path: '/Shop/index'
+        });
     });
 };
 exports.getProduct = (req, res, next) => {
-    res.render('Shop/product-list', {
-        pageTitle: 'Product-List',
-        path: '/Shop/product-list'
+    Product.fetchAll(products => {
+        res.render('Shop/product-list', {
+            prods: products,
+            pageTitle: 'Product-List',
+            path: '/Shop/product-list'
+        });
     });
 };
 exports.getCart = (req, res, next) => {

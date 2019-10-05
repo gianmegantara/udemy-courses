@@ -4,7 +4,7 @@
 
 <%- include('../template/nav.ejs') %>
 <main>
-    <form class="product-form" action="/add-product" method="POST">
+    <form class="product-form" action="/Admin/add-product" method="POST">
         <div class="form-control">
             <label for="title">Title</label>
             <input type="text" name="title" id="title">
@@ -19,7 +19,7 @@
         </div>
         <div class="form-control">
             <label for="description">Description</label>
-            <textarea rows="5" type="text" name="description" id="description"></textarea>
+            <textarea type="text" name="description" id="description" rows="5"></textarea>
         </div>
 
         <button class="btn" type="submit">Add Product</button>
