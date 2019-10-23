@@ -7,10 +7,6 @@ exports.getAddProduct = (req, res, next) => {
     });
 };
 exports.postAddProduct = (req, res, next) => {
-    console.log(req.body.title);
-    console.log(req.body.imgUrl);
-    console.log(req.body.price);
-    console.log(req.body.description);
     const title = req.body.title;
     const imgUrl = req.body.imgUrl;
     const price = req.body.price;
